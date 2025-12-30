@@ -93,10 +93,7 @@ def create_vector_db():
 # ---------------- Load QA Chain ----------------
 def get_qa_chain(personality="Funny 😁"):
     if not os.path.exists(f"{vectordb_file_path}/index.faiss"):
-        create_vector_db() 
-        raise RuntimeError(
-            "FAISS index not found. Run create_vector_db() once first."
-        )
+        create_vector_db()  # ✅ auto-create silently
 
     vectordb = FAISS.load_local(
         vectordb_file_path,
