@@ -1,0 +1,5 @@
+.env
+Faiss_index/
+__pycache__/
+.vscode/
+*.pyc
