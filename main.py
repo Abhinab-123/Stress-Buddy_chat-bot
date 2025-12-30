@@ -1,7 +1,8 @@
 import streamlit as st
 from langchain_helper import get_qa_chain, create_vector_db
 
-st.title("Relationship Stress Buddy 💔😉")
+st.title("Stress Buddy 💔😉")
+st.caption("Represented By BABA")
 
 # 🔒 Backend-controlled personality
 DEFAULT_PERSONALITY = "Funny 😁"
